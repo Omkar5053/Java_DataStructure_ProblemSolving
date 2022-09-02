@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class Test {
+public class PrintNFibonacci {
     public static void main(String [] args)
     {
         //printfibonacci();
@@ -18,7 +18,8 @@ public class Test {
         Scanner sc  = new Scanner(System.in);
         System.out.println("Enter the value of n : ");
         n = sc.nextInt();
-        while(n > 0)
+        System.out.print(num1+ " "+num2+" ");
+        while(n-2 > 0)
         {
             num3 = num1 + num2;
             System.out.printf(num3 + " ");
@@ -30,7 +31,7 @@ public class Test {
 
     private static void printfibonaccibyRecursion(int num1, int num2, int size)
     {
-        if(size == 0)
+        if(size == 2)
             return;
 
         int num3 = num1 + num2;

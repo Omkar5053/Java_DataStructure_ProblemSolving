@@ -1,7 +1,7 @@
 package practice;
 
 import java.util.Scanner;
-
+//0 1 1 2 3 5 8 13
 public class fabonaci {
     public static void main(String [] args){
         int n;

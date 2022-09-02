@@ -21,7 +21,7 @@ public class MaxSubArraySumKadanes {
                 flag = false;
         }
 
-        if(flag) //true means inside array positive elements exist eventhough the count of positive is one
+        if(flag) //false means inside array positive elements exist eventhough the count of positive is one
         {
             for(int i = 0; i<arr.length; i++)
             {

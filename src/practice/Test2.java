@@ -3,16 +3,27 @@ package practice;
 public class Test2 {
     public static void main(String[] args)
     {
-        int a,b,c;
-        a = 9;
-        b = 5;
-        c = b & a;
-
-        System.out.println(c);
-        if((b ^ a) < (b & a))
+        System.out.println(getNo(45671));
+    }
+    private static int getNo(int num)
+    {
+        int temp = num;
+        int ans = 0;
+        int i = 0;
+        while(temp > 0)
         {
-            System.out.println(a);
+            int n = temp%10;
+            if(n%2 == 0)
+            {
+                n = n + 1;
+            } else
+            {
+                n = n - 1;
+            }
+            ans = n * (int)Math.pow(10, i) + ans;
+            i++;
+            temp = temp / 10;
         }
-        System.out.println(a+b);
+        return ans;
     }
 }
